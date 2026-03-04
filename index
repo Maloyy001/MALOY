@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maloyy</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(-45deg, #0f0f0f, #1a001f, #001f1f, #0f0f0f);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 40px rgba(255,0,255,0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px #ff00ff;
+}
+
+p {
+    color: #bbb;
+}
+
+.buttons {
+    margin-top: 40px;
+}
+
+a {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.donate {
+    background: linear-gradient(45deg, #ff0066, #ff00ff);
+    color: white;
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.tiktok {
+    background: linear-gradient(45deg, #00f2ea, #00ff99);
+    color: black;
+    box-shadow: 0 0 20px #00f2ea;
+}
+
+a:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 40px white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>maloyy_001</h1>
+    <p>Поддержи меня ❤️</p>
+
+    <div class="buttons">
+        <a href="https://www.donationalerts.com/r/maloyy_003" class="donate" target="_blank">💰 Донат</a>
+        <a href="https://www.tiktok.com/@maloyy_003?lang=ru-RU" class="tiktok" target="_blank">🎵 TikTok</a>
+    </div>
+</div>
+
+</body>
+</html>
